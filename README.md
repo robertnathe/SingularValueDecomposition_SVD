@@ -18,7 +18,7 @@ Features
 
 Requirements
 
-    C++17 or newer
+    C++20 or newer
 
     Eigen library (header-only)
 
