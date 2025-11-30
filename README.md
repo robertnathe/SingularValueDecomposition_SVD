@@ -1,6 +1,6 @@
 Matrix Market SVD Solver
 
-This C++ program reads a matrix A and a vector B from files in Matrix Market coordinate format, solves the linear system A·X = B using Singular Value Decomposition (SVD), and writes the solution vector X back to disk. The program uses the Eigen library for linear algebra operations.
+The C++ program reads a matrix A and a vector B from files in Matrix Market coordinate format, solves the linear system A·X = B using Singular Value Decomposition (SVD), and writes the solution vector X to the disk. The program uses the Eigen library for linear algebra operations.
 
 Features
 
