@@ -93,8 +93,8 @@ For standalone C++ execution:
     ```bash
     ./Singular_Value_Decomposition_SVD
     ```
-4.  The program will output the solution vector $\mathbf{x}$, singular values, and execution time to the console.
-5.  The solution vector $\mathbf{x}$ will also be saved to a file named `X_out.dat`.
+4.  The program will output the solution vector x, singular values, and execution time to the console.
+5.  The solution vector x will also be saved to a file named `X_out.dat`.
 
 Input and Output File Format
 
