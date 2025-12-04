@@ -1,6 +1,6 @@
 Singular Value Decomposition (SVD) Solver: C++ Core with Python Wrapper
 
-This repository contains programs for solving the linear least squares problem $\mathbf{A}\mathbf{x} = \mathbf{b}$ using Singular Value Decomposition (SVD). The core computational logic is implemented in high-performance C++ using the Eigen library, and it is complemented by a convenient Python wrapper for data handling and execution.
+The Singular Value Decomposition (SVD) algorithm solves the linear least squares problem A x = b using a high-performance C++ core (built with the Eigen library) for the computational logic, complemented by a convenient Python wrapper for streamlined data handling and execution. 
 
 Features
 
