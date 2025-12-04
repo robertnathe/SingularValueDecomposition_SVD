@@ -4,7 +4,7 @@ The Singular Value Decomposition (SVD) algorithm solves the linear least squares
 
 Features
 
-Robust Solver: Solves the linear system $\mathbf{A}\mathbf{x} = \mathbf{b}$ using SVD, which is robust even for rank-deficient or ill-conditioned matrices.
+Robust Solver: Solves the linear system A x = b using SVD, which is robust even for rank-deficient or ill-conditioned matrices.
 High Performance C++ Backend: The SVD calculation is performed by a C++ executable (`Singular_Value_Decomposition_SVD`) utilizing the Eigen library (`BDCSVD` or `JacobiSVD`) for optimized linear algebra operations.
 Standardized I/O: The C++ program accepts input matrix $\mathbf{A}$ and vector $\mathbf{b}$ via files (`A.dat`, `B.dat`) in the **Matrix Market Coordinate format**.
 Python Integration: A Python class, `SVDWrapper`, provides an interface to compile the C++ code, write NumPy arrays to the required input files, execute the C++ solver, and read the solution vector $\mathbf{x}$ back into a NumPy array.
