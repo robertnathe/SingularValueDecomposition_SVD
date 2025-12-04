@@ -6,8 +6,8 @@ Features
 
 Robust Solver: Solves the linear system A x = b using SVD, which is robust even for rank-deficient or ill-conditioned matrices.
 High Performance C++ Backend: The SVD calculation is performed by a C++ executable (`Singular_Value_Decomposition_SVD`) utilizing the Eigen library (`BDCSVD` or `JacobiSVD`) for optimized linear algebra operations.
-Standardized I/O: The C++ program accepts input matrix $\mathbf{A}$ and vector $\mathbf{b}$ via files (`A.dat`, `B.dat`) in the **Matrix Market Coordinate format**.
-Python Integration: A Python class, `SVDWrapper`, provides an interface to compile the C++ code, write NumPy arrays to the required input files, execute the C++ solver, and read the solution vector $\mathbf{x}$ back into a NumPy array.
+Standardized I/O: The C++ program accepts input matrix $\mathbf{A}$ and vector $\mathbf{b}$ via files (`A.dat`, `B.dat`) in the Matrix Market Coordinate format.
+Python Integration: A Python class, `SVDWrapper`, provides an interface to compile the C++ code, write NumPy arrays to the required input files, execute the C++ solver, and read the solution vector x back into a NumPy array.
 
 Prerequisites
 
@@ -81,14 +81,14 @@ except Exception as e:
 # solver.clean()
 ```
 
-The `solver.solve(A, b)` method automatically writes the input matrix $\mathbf{A}$ to `A.dat` and vector $\mathbf{b}$ to `B.dat`, runs the C++ executable, and reads the result $\mathbf{x}$ from `X_out.dat`.
+The `solver.solve(A, b)` method automatically writes the input matrix $\mathbf{A}$ to `A.dat` and vector b to `B.dat`, runs the C++ executable, and reads the result x from `X_out.dat`.
 
 3\. Usage via C++ Executable (Standalone)
 
 For standalone C++ execution:
 
 1.  Ensure you have compiled the executable (`make`).
-2.  Manually create the input files `A.dat` (matrix $\mathbf{A}$) and `B.dat` (vector $\mathbf{b}$) in the Matrix Market Coordinate format.
+2.  Manually create the input files `A.dat` (matrix $\mathbf{A}$) and `B.dat` (vector b) in the Matrix Market Coordinate format.
 3.  Run the executable:
     ```bash
     ./Singular_Value_Decomposition_SVD
