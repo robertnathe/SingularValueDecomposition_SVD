@@ -102,9 +102,9 @@ The C++ program is designed to read and write files based on the Matrix Market f
 
 | File | Role | Format | Details |
 | :--- | :--- | :--- | :--- |
-| `A.dat` | Input Matrix $\mathbf{A}$ | Matrix Market Coordinate (Real General) | Contains rows, columns, and non-zero entries for $\mathbf{A}$. |
-| `B.dat` | Input Vector $\mathbf{b}$ | Matrix Market Coordinate (Real General) | Formatted as a column vector (e.g., $M \times 1$). |
-| `X_out.dat` | Output Vector $\mathbf{x}$ | Modified Matrix Market Array | Contains the calculated solution vector $\mathbf{x}$. |
+| `A.dat` | Input Matrix A | Matrix Market Coordinate (Real General) | Contains rows, columns, and non-zero entries for $\mathbf{A}$. |
+| `B.dat` | Input Vector b | Matrix Market Coordinate (Real General) | Formatted as a column vector (e.g., $M \times 1$). |
+| `X_out.dat` | Output Vector x | Modified Matrix Market Array | Contains the calculated solution vector x. |
 
 The Python `SVDWrapper` handles the translation between NumPy arrays and these file formats, including managing the 1-based indexing expected by the C++ parser.
 
